@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href='/assets/css/tailwind.css'>
+    <title>CV</title>
+  </head>
+  
+  <body class="font-sans antialiased flex flex-col min-h-screen">
+    <div class="flex-grow">
+      <header class="bg-primary text-secondary py-6">
+  <nav class="max-w-6xl mx-auto text-lg flex space-x-6 justify-center">
+    <a href="/" class="text-lg font-bold"> B----- C------ </a>
+    
+      <a href="/"
+         class="hover:text-highlight transition-colors duration-300 
+         
+         ">
+        Home
+      </a>
+    
+      <a href="/publications/"
+         class="hover:text-highlight transition-colors duration-300 
+         
+         ">
+        Publications
+      </a>
+    
+      <a href="/cv/"
+         class="hover:text-highlight transition-colors duration-300 
+         
+         text-highlight font-semibold
+         
+         ">
+        CV
+      </a>
+    
+      <a href="/reviews/"
+         class="hover:text-highlight transition-colors duration-300 
+         
+         ">
+        Reviews
+      </a>
+    
+      <a href="/officehours/"
+         class="hover:text-highlight transition-colors duration-300 
+         
+         ">
+        Office Hours
+      </a>
+    
+  </nav>
+</header>
+
+
+      <main class="max-w-4xl mx-auto p-6 mb-auto"> 
+        
+<h2 class="text-4xl font-semibold text-highlight mb-8">Curriculum Vitae</h2>
+
+<div class="max-w-6xl mx-auto">
+  <!-- PDF Embed -->
+  <embed src="/assets/cv.pdf" type="application/pdf" width="100%" height="800px" class="rounded-lg shadow-lg">
+  
+  <!-- Download Link -->
+  <p class="mt-4 text-center">
+    <a href="/assets/cv.pdf" class="text-highlight underline hover:text-highlight/80" download>Download CV (PDF)</a>
+  </p>
+</div>
+      </main>
+    </div>
+    
+    <footer class="bg-primary text-secondary text-center py-4">
+      <p>&copy; 2024 John France.</p>
+    </footer>
+  </body>
+</html>

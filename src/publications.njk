@@ -1,0 +1,17 @@
+---
+layout: base
+title: Publications
+tags: page 
+---
+
+<h2 class="text-4xl font-semibold text-highlight mb-8">Publications</h2>
+
+<div class="flex flex-wrap gap-8">
+  {% for pub in publications %}
+  <div class="w-full md:w-1/3 p-4 bg-white shadow rounded-lg">
+    <p class="text-sm text-neutral">{{ pub.year }}</p>
+    <h3 class="text-lg font-bold">{{ pub.title }}</h3>
+    <p class="italic text-neutral">{{ pub.journal }}</p>
+  </div>
+  {% endfor %}
+</div>

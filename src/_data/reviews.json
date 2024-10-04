@@ -1,0 +1,58 @@
+[
+    {
+        "title": "The Cheese and the Worms",
+        "author": "Carlo Ginzburg",
+        "rating": 5,
+        "date": "2024-09-24",
+        "review_text": "An absolutely extraordinary work of recovery and reconstruction.",
+        "image_url": "/assets/images/cheese.jpg"
+    },
+    {
+        "title": "In Search of Canadian Political Culture",
+        "author": "Nelson Wiseman",
+        "rating": 2,
+        "date": "2024-09-21",
+        "review_text": "If you want a series of absolutely disjointed, English-Canadian-Boomer-centrist musings on Canadian politics, look no further. 2 stars because it occasionally describes something accurate." ,
+        "image_url": "/assets/images/cpc.jpg"
+    },
+    {
+        "title": "Red Skin, White Masks",
+        "author": "Glen Sean Coulthard",
+        "rating": 5,
+        "date": "2024-09-27",
+        "review_text": "There is no work with more explanatory power when it comes to the basic dynamics of Canadian politics, in the broadest sense, in the 21st century.",
+        "image_url": "/assets/images/redskin.jpg"
+    },
+    {
+        "title": "A History of Contemporary Italy: Society and Politics, 1943-1988",
+        "author": "Paul Ginsborg",
+        "rating": 5,
+        "date": "2024-07-07",
+        "review_text": "Simply one of the best historical works I've ever read, and the single best on Italy. Comprehensive, but fluidly written; vivid in its use of individual or local experience to illustrate wider themes; incredibly precise--and usually convincing--in argumentation.",
+        "image_url": "/assets/images/italy.jpg"
+    },
+    {
+        "title": "Falling Hour",
+        "author": "Geoffrey D Morrison",
+        "rating": 5,
+        "date": "2024-07-07",
+        "review_text": "Impossible to believe this won't be a cult classic.",
+        "image_url": "/assets/images/falling.jpg"
+    },
+    {
+        "title": "The Patriots and the People: The Rebellion of 1837 in Rural Lower Canada (Heritage)",
+        "author": "Allan Greer",
+        "rating": 4,
+        "date": "2024-06-19",
+        "review_text": " My only complaint is that in the early chapters on rural community life, the connection to the wider argument sometimes disappears into the thick of case-study details, but this is a hazard of sufficiently careful social history.",
+        "image_url": "/assets/images/1837.jpg"
+    },
+    {
+        "title": "Zapata and the Mexican Revolution",
+        "author": "John Womack Jr.",
+        "rating": 5,
+        "date": "2024-06-14",
+        "review_text": "Fantastic book; I feel like I have a better understanding not only of Zapata or the Mexican Revolution but of Mexico and of peasant revolutions more generally. I also wish historians let themselves *write* like this still.",
+        "image_url": "/assets/images/zap.jpg"
+    }
+]

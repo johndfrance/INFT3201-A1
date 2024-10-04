@@ -1,0 +1,23 @@
+---
+layout: base.njk
+pagination:
+  data: publications
+  size: 1
+  alias: pub
+  permalink: "/{{ pub.slug | slugify}}/index.html"
+---
+<h2 class="text-4xl font-semibold text-highlight mb-4">{{ pub.title }}</h2>
+
+<p class="text-sm text-neutral">{{ pub.year }}</p>
+<p class="italic text-neutral">{{ pub.journal }}</p>
+
+<!-- Pagination Links -->
+<div class="flex justify-between items-center mt-8">
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}" class="text-highlight underline">Previous</a>
+  {% endif %}
+  
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}" class="text-highlight underline">Next</a>
+  {% endif %}
+</div>

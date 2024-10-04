@@ -1,0 +1,39 @@
+[
+    {
+      "year": "2021",
+      "title": "The Impact of Labor Movements on Modern Politics",
+      "journal": "Journal of Labor Studies",
+      "slug": "impact-of-labor-movements"
+    },
+    {
+      "year": "2020",
+      "title": "Social Justice and Political Activism in the 20th Century",
+      "journal": "Political Science Review",
+      "slug": "social-justice-activism"
+    },
+    {
+      "year": "2019",
+      "title": "Workers' Rights and Globalization",
+      "journal": "International Labor Journal",
+      "slug": "workers-rights-globalization"
+    },
+    {
+        "year": "2021",
+        "title": "The Impact of Labor Movements on Modern Politics",
+        "journal": "Journal of Labor Studies",
+        "slug": "impact-of-labor-movements-2"
+      },
+      {
+        "year": "2020",
+        "title": "Social Justice and Political Activism in the 20th Century",
+        "journal": "Political Science Review",
+        "slug": "social-justice-activism-2"
+      },
+      {
+        "year": "2019",
+        "title": "Workers' Rights and Globalization",
+        "journal": "International Labor Journal",
+        "slug": "workers-rights-globalization-2"
+      }    
+]
+  

@@ -1,0 +1,15 @@
+<header class="bg-primary text-secondary py-6">
+  <nav class="max-w-6xl mx-auto text-lg flex space-x-6 justify-center">
+    <a href="/" class="text-lg font-bold"> B----- C------ </a>
+    {% for item in collections.page %}
+      <a href="{{ item.url }}"
+         class="hover:text-highlight transition-colors duration-300 
+         {% if item.url == page.url %}
+         text-highlight font-semibold
+         {% endif %}
+         ">
+        {{ item.data.title }}
+      </a>
+    {% endfor %}
+  </nav>
+</header>

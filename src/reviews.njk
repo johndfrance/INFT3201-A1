@@ -1,0 +1,43 @@
+---
+layout: base.njk
+title: Reviews
+tags: page
+pagination:
+    data: reviews
+    size: 2
+    alias: revs
+
+---
+
+<h2 class="text-4xl font-semibold text-highlight mb-4">Reviews</h2>
+
+<div class="space-y-8">
+  {% for rev in revs %}
+  <div class="p-6 bg-white shadow-md rounded-lg overflow-hidden">
+    <img src="{{ rev.image_url }}" alt="Cover of {{ rev.title }}" 
+     class="w-32 h-48 object-cover rounded-lg shadow-lg float-left mr-6 mb-4">
+
+    <h3 class="text-2xl font-bold">{{ rev.title }}</h3>
+    <h4 class="text-lg text-gray-600">{{ rev.author }}</h4>
+    <p class="text-sm text-gray-400">{{ rev.review_date }}</p>
+    <p>{{"⭐".repeat(rev.rating) }}</p>
+    <p class="mt-4">{{ rev.review_text }}</p>
+  </div>
+  {% endfor %}
+</div>
+
+
+<!-- Pagination Navigation -->
+<div class="flex justify-between mt-8">
+  {% if pagination.pageNumber > 0 %}
+    <a href="{{ pagination.href.previous }}" class="text-highlight underline hover:text-highlight/80">Previous</a>
+  {% else %}
+    <span class="text-gray-400">Previous</span>
+  {% endif %}
+
+  {% if pagination.pageNumber < pagination.pages.length - 1 %}
+    <a href="{{ pagination.href.next }}" class="text-highlight underline hover:text-highlight/80">Next</a>
+  {% else %}
+    <span class="text-gray-400">Next</span>
+  {% endif %}
+</div>
