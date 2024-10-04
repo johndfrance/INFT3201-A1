@@ -1,15 +1,56 @@
 <header class="bg-primary text-secondary py-6">
-  <nav class="max-w-6xl mx-auto text-lg flex space-x-6 justify-center">
-    <a href="/" class="text-lg font-bold"> B----- C------ </a>
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+
+    <!-- Mobile Logo (visible on small screens) -->
+    <div class="block md:hidden text-lg font-bold">
+      <a href="/" class="hover:text-highlight">B----- C------</a>
+    </div>
+
+    <!-- Desktop Navigation Links (visible on medium and larger screens) -->
+    <nav class="hidden md:flex space-x-6 justify-around flex-grow">
+      <!-- Desktop Logo -->
+      <div class="text-lg font-bold hidden md:block">
+        <a href="/" class="hover:text-highlight">B----- C------</a>
+      </div>
+      {% for item in collections.page %}
+        <a href="{{ item.url }}"
+           class="hover:text-highlight transition-colors duration-300 
+           {% if item.url == page.url %}
+           text-highlight font-semibold
+           {% endif %}">
+          {{ item.data.title }}
+        </a>
+      {% endfor %}
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="text-secondary md:hidden focus:outline-none" id="mobile-menu-button">
+      <!-- Hamburger Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <nav id="mobile-menu" class="md:hidden hidden flex flex-col space-y-4 p-4">
     {% for item in collections.page %}
       <a href="{{ item.url }}"
          class="hover:text-highlight transition-colors duration-300 
          {% if item.url == page.url %}
          text-highlight font-semibold
-         {% endif %}
-         ">
+         {% endif %}">
         {{ item.data.title }}
       </a>
     {% endfor %}
   </nav>
 </header>
+
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>

@@ -22,7 +22,7 @@ tags: page
     <div class="md:col-span-2">
         <h2 class="text-4xl font-semibold text-highlight">About Me</h2>
         <p class="mt-4 text-xl text-neutral">
-            I’m B---- C----, a graduate student in Canadian History at T____ University. My research focuses on the intersections of labor movements, social justice, and political activism throughout history. My work explores the stories of marginalized voices and their impact on labor policy and reforms.
+            I’m B---- C----, a graduate student in Canadian History at T____ University, having previously graduated with a BA in history from the University of ------. I am interested in the histories of labour and left-wing politics in Canada and internationally, and in understanding Canadian history as part of the histories of the British Empire and settler colonialism globally.
         </p>
     </div>
 </div>

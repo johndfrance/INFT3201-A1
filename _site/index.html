@@ -14,48 +14,109 @@
   <body class="font-sans antialiased flex flex-col min-h-screen">
     <div class="flex-grow">
       <header class="bg-primary text-secondary py-6">
-  <nav class="max-w-6xl mx-auto text-lg flex space-x-6 justify-center">
-    <a href="/" class="text-lg font-bold"> B----- C------ </a>
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+
+    <!-- Mobile Logo (visible on small screens) -->
+    <div class="block md:hidden text-lg font-bold">
+      <a href="/" class="hover:text-highlight">B----- C------</a>
+    </div>
+
+    <!-- Desktop Navigation Links (visible on medium and larger screens) -->
+    <nav class="hidden md:flex space-x-6 justify-around flex-grow">
+      <!-- Desktop Logo -->
+      <div class="text-lg font-bold hidden md:block">
+        <a href="/" class="hover:text-highlight">B----- C------</a>
+      </div>
+      
+        <a href="/"
+           class="hover:text-highlight transition-colors duration-300 
+           
+           text-highlight font-semibold
+           ">
+          Home
+        </a>
+      
+        <a href="/publications/"
+           class="hover:text-highlight transition-colors duration-300 
+           ">
+          Publications
+        </a>
+      
+        <a href="/cv/"
+           class="hover:text-highlight transition-colors duration-300 
+           ">
+          CV
+        </a>
+      
+        <a href="/reviews/"
+           class="hover:text-highlight transition-colors duration-300 
+           ">
+          Reviews
+        </a>
+      
+        <a href="/officehours/"
+           class="hover:text-highlight transition-colors duration-300 
+           ">
+          Office Hours
+        </a>
+      
+    </nav>
+
+    <!-- Mobile Menu Button -->
+    <button class="text-secondary md:hidden focus:outline-none" id="mobile-menu-button">
+      <!-- Hamburger Icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <nav id="mobile-menu" class="md:hidden hidden flex flex-col space-y-4 p-4">
     
       <a href="/"
          class="hover:text-highlight transition-colors duration-300 
          
          text-highlight font-semibold
-         
          ">
         Home
       </a>
     
       <a href="/publications/"
          class="hover:text-highlight transition-colors duration-300 
-         
          ">
         Publications
       </a>
     
       <a href="/cv/"
          class="hover:text-highlight transition-colors duration-300 
-         
          ">
         CV
       </a>
     
       <a href="/reviews/"
          class="hover:text-highlight transition-colors duration-300 
-         
          ">
         Reviews
       </a>
     
       <a href="/officehours/"
          class="hover:text-highlight transition-colors duration-300 
-         
          ">
         Office Hours
       </a>
     
   </nav>
 </header>
+
+<script>
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 
 
       <main class="max-w-4xl mx-auto p-6 mb-auto"> 
@@ -77,7 +138,7 @@
     <div class="md:col-span-2">
         <h2 class="text-4xl font-semibold text-highlight">About Me</h2>
         <p class="mt-4 text-xl text-neutral">
-            I’m B---- C----, a graduate student in Canadian History at T____ University. My research focuses on the intersections of labor movements, social justice, and political activism throughout history. My work explores the stories of marginalized voices and their impact on labor policy and reforms.
+            I’m B---- C----, a graduate student in Canadian History at T____ University, having previously graduated with a BA in history from the University of ------. I am interested in the histories of labour and left-wing politics in Canada and internationally, and in understanding Canadian history as part of the histories of the British Empire and settler colonialism globally.
         </p>
     </div>
 </div>
@@ -88,5 +149,13 @@
     <footer class="bg-primary text-secondary text-center py-4">
       <p>&copy; 2024 John France.</p>
     </footer>
+    <script>
+      const menuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
   </body>
 </html>
